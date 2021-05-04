@@ -25,7 +25,7 @@ public class ScaleSneaker : MonoBehaviour
         target = gameObject.transform;
         _startScale = transform.localScale;
         _startPosition = transform.position;
-        _zoomScale = transform.localScale * 1.5f;
+        _zoomScale =  transform.localScale * 1.5f;
         _y = transform.position.y;
     }
     bool DoubleClick()

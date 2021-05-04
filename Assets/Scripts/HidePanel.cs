@@ -4,26 +4,20 @@ using UnityEngine;
 
 public class HidePanel : MonoBehaviour
 {
-    Animator _animator;
+    public Animator Animator;
     public bool check;
 
-    private void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
     public void Hide()
     {
         check = !check;
+
         if (check == true)
         {
-            _animator.SetBool("Hide", true);
+            Animator.SetBool("Hide", true);
         }
-           
-        
-
         if (check == false)
         {
-            _animator.SetBool("Hide", false);
+            Animator.SetBool("Hide", false);
         }
     }
 }
